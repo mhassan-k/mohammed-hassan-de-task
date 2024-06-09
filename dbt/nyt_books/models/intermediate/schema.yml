@@ -1,0 +1,58 @@
+version: 2
+
+sources:
+  - name:  airflow_db
+    database: postgres
+    schema: public
+    tables:
+      - name: stg_best_seller_book_lists
+models:
+  - name: dim_books
+    description: "Contains detailed information about each book"
+    columns:
+      - name: book_id
+        description: "Primary key"
+      - name: book_title
+        description: "Title of the book"
+      - name: book_author
+        description: "Author of the book"
+      - name: book_isbn
+        description: "ISBN of the book"
+      - name: book_description
+        description: "Description of the book"
+      - name: book_image
+        description: "URL of the book image"
+
+  - name: dim_lists
+    description: "Contains information about the lists"
+    columns:
+      - name: list_id
+        description: "Primary key"
+      - name: list_name
+        description: "Name of the list"
+      - name: display_name
+        description: "Display name of the list"
+      - name: updated
+        description: "Update frequency of the list"
+
+  - name: dim_publishers
+    description: "Contains information about the publishers"
+    columns:
+      - name: publisher_id
+        description: "Primary key"
+      - name: book_publisher
+        description: "Name of the publisher"
+
+  - name: fct_bookrankings
+    description: "Contains the fact data about the book rankings"
+    columns:
+      - name: bestsellers_date
+        description: "Date of the bestseller list"
+      - name: list_id
+        description: "Foreign key referencing dimension_lists"
+      - name: book_rank
+        description: "Rank of the book"
+      - name: book_id
+        description: "Foreign key referencing dimension_books"
+      - name: publisher_id
+        description: "Foreign key referencing dimension_publishers"

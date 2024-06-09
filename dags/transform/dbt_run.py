@@ -23,5 +23,5 @@ my_cosmos_dag = DbtDag(
     schedule_interval=None,
     start_date=datetime(2023, 1, 1),
     catchup=False,
-    dag_id="my_cosmos_example_dag",
+    dag_id="nyt_books_dbt_run",
 )

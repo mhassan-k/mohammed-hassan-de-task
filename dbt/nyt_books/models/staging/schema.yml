@@ -1,5 +1,12 @@
 version: 2
 
+sources:
+  - name:  airflow_db
+    database: postgres
+    schema: public
+    tables:
+      - name: best_seller_book_lists
+
 models:
   - name: stg_best_seller_book_lists
     description: "Model for best seller book lists"

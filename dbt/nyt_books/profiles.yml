@@ -3,7 +3,7 @@ airflow_db:
   outputs:
     dev:
       type: postgres
-      host: localhost
+      host: host.docker.internal
       user: airflow
       password: airflow
       port: 8585
