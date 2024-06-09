@@ -40,4 +40,5 @@ fetch_and_save_data_task = NYTBooksAPIClientOperator(
     end_date_dt='2021-03-31',
     dag=dag,
 )
+
 start >> fetch_and_save_data_task >> end
