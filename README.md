@@ -9,11 +9,17 @@ A data pipeline with Python, dbt, Docker, Airflow, and Postgres
 
 [NY books API](https://developer.nytimes.com/docs/books-product/1/routes/lists/overview.json/get) is an API that fetches data about to books
 
-### Architecture
+## Architecture
 ![image](https://github.com/mhassan-k/mohammed-hassan-de-task/assets/12893951/0a1bc487-c170-43e6-95fc-fc08b9f240a7)
 
 
-### Data Modeling
+## Data Modeling
+Here are the dimensional models created from the provided data:
+
+  - fct_bookRankings: This table contains the fact data about the book rankings.
+  - dim_Books: This table contains detailed information about each book.
+  - dim_lists: This table contains information about the lists.
+  - dim_publishers: This table contains information about the publishers.
 
 ### Tools 
 - Containerization - [**Docker**](https://www.docker.com), [**Docker Compose**](https://docs.docker.com/compose/)
