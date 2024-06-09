@@ -43,7 +43,7 @@ Here are the dimensional models created from the provided data:
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/mhassan-k/mohammed-hassan-de-tas
+   git clone https://github.com/mhassan-k/mohammed-hassan-de-task
    ```
 
 2. Run
@@ -55,7 +55,7 @@ Here are the dimensional models created from the provided data:
    ```JS
    Navigate to `http://localhost:8000/` on the browser
    login --> username : airflow password : airflow
-   trigger airflow pipeline  `x`
+   trigger airflow pipeline  `nyt_books_api_pipeline `
     ```
 ## How can I make this better?!
 - 
