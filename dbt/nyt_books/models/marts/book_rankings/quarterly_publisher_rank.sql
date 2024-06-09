@@ -5,8 +5,8 @@
 with PublisherScores as (
     select
         fb.publisher_id,
-        quarter(fb.bestsellers_date) as quarter,
-        year(fb.bestsellers_date) as year,
+        date_part('quarter', fb.bestsellers_date) as quarter,
+        extract(year from fb.bestsellers_date) as year,
         case
             when fb.book_rank = 1 then 5
             when fb.book_rank = 2 then 4
