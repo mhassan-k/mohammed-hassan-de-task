@@ -15,7 +15,7 @@ default_args = {
 
 # Define the DAG
 dag = DAG(
-    'nyt_books_api_extract',
+    'nyt_books_api_pipeline',
     default_args=default_args,
     description='DAG to fetch NYT books data and save to PostgreSQL',
     schedule_interval='@daily',
