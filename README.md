@@ -57,6 +57,9 @@ Here are the dimensional models created from the provided data:
    login --> username : airflow password : airflow
    trigger airflow pipeline  `nyt_books_api_pipeline `
     ```
-## How can I make this better?!
-- 
-- 
+## If I have additional time, I plan to make the following enhancements:
+ 
+- Improve errors handling for API calls.
+- Implement better secret management.
+- Enhance data ingestion by using DLT for standardizing data from multiple API endpoints.
+- Develop additional methods for data processing, including saving data into the file system and using Spark as the processing engine for loading data into the Data Warehouse (DWH).
