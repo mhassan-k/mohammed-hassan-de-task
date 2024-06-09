@@ -1,0 +1,44 @@
+version: 2
+
+models:
+  - name: stg_best_seller_book_lists
+    description: "Model for best seller book lists"
+    columns:
+      - name: bestsellers_date
+        description: "The date the best sellers list was generated"
+      - name: published_date
+        description: "The date the data was published"
+      - name: published_date_description
+        description: "Description of the published date"
+      - name: previous_published_date
+        description: "The previous published date"
+      - name: next_published_date
+        description: "The next published date"
+      - name: list_id
+        description: "ID of the list"
+      - name: list_name
+        description: "Name of the list"
+      - name: display_name
+        description: "Display name of the list"
+      - name: updated
+        description: "Frequency of update"
+      - name: list_image
+        description: "URL of the list image"
+      - name: list_image_width
+        description: "Width of the list image"
+      - name: list_image_height
+        description: "Height of the list image"
+      - name: book_rank
+        description: "Rank of the book"
+      - name: book_title
+        description: "Title of the book"
+      - name: book_author
+        description: "Author of the book"
+      - name: book_description
+        description: "Description of the book"
+      - name: book_isbn
+        description: "ISBN of the book"
+      - name: book_publisher
+        description: "Publisher of the book"
+      - name: book_image
+        description: "URL of the book image"
