@@ -37,8 +37,8 @@ fetch_and_save_data_task = NYTBooksAPIClientOperator(
         "options": "-c search_path=public",
     },
     url="https://api.nytimes.com/svc/books/v3/lists/full-overview.json",
-    start_date_dt="2022-01-01",
-    end_date_dt="2022-03-31",
+    start_date_dt="2021-01-01",
+    end_date_dt="2023-12-31",
     dag=dag,
 )
 
