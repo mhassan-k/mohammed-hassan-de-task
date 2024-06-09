@@ -5,7 +5,7 @@ from de_utils.operators.nyt_books_api_client_operator import NYTBooksAPIClientOp
 from airflow.operators.trigger_dagrun import TriggerDagRunOperator
 
 # Variables
-api_key = "fA9Y74l4GCgpj6sZpiXlLPf8IDUT6jRy"
+api_key = "AE46zenQA134XBTWGPdVr9UCClWq4FVC"
 
 default_args = {
     "owner": "airflow",
